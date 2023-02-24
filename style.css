@@ -152,3 +152,138 @@ input[type="submit"]{
     margin-top: 100px;
     box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
 }
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: var(--azul-dnc);
+}
+
+footer .linha1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+}
+
+footer h5{
+    text-align: center;
+    color: #FFF;
+    font-family: var(--fonte-padrao);
+    font-size: 15px;
+    background-color: var(--preto-dnc);
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom:0;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer ul li {
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-size: 15px;
+    margin: 15px 0px 15px 0px;
+}
+
+footer ul li a {
+    color:#FFF;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    color: var(--cinza-hover);
+}
+
+footer .endereco {
+    font-family: var(--fonte-padrao);
+    font-size: 15px;
+    color: #FFF;
+    text-align: center;
+    width: 23%;
+}
+
+footer .linha2 {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+}
+
+footer .linha2 a {
+    font-family: var(--fonte-padrao);
+    font-size: 15px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer .linha2 a:hover {
+    color: var(--cinza-hover);
+}
+
+footer .linha2 a:first-child {
+    border-right: 2px solid #FFF;
+}
+
+
+@media only screen and (max-width: 600px){
+
+    /* Menu */
+
+    #principal {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #menu {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px
+    }
+
+    #menu a {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+
+    #principal button {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* Section */
+
+    section h1 {
+        font-size: 38px;
+    }
+
+    section h2 {
+        font-size: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    form {
+        width: 95%;
+        font-size: 20px;
+    }
+    
+    .checkbox-itens label {
+        font-size: 15px;
+    }
+}
